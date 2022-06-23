@@ -15,13 +15,12 @@ class RandomPhotoListViewController: UICollectionViewController {
         super.viewDidLoad()
         
 
-
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }
-
+    
     /*
     // MARK: - Navigation
 
@@ -87,10 +86,4 @@ class RandomPhotoListViewController: UICollectionViewController {
 
 }
 
-//// MARK: UICollectionViewDelegateFlowLayout
-//extension RandomPhotoListViewController: UICollectionViewDelegateFlowLayout {
-//    
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        CGSize(width: 100, height: 100)
-//    }
-//}
+
