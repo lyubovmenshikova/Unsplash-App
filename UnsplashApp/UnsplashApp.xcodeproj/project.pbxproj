@@ -14,6 +14,11 @@
 		9F2F299A28522119006CEBAF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F299928522119006CEBAF /* TabBarViewController.swift */; };
 		9F2F299C2852217C006CEBAF /* RandomPhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F299B2852217C006CEBAF /* RandomPhotoListViewController.swift */; };
 		9F2F299E28522339006CEBAF /* FavoritePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F299D28522339006CEBAF /* FavoritePhotoViewController.swift */; };
+		9F2F29EE286596A5006CEBAF /* PhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F29ED286596A4006CEBAF /* PhotosModel.swift */; };
+		9F2F29F12865A5A4006CEBAF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F29F02865A5A4006CEBAF /* NetworkService.swift */; };
+		9F2F29F32865A5AC006CEBAF /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F29F22865A5AC006CEBAF /* NetworkDataFetcher.swift */; };
+		9F2F29F52865A5B4006CEBAF /* DataFetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F29F42865A5B4006CEBAF /* DataFetcherService.swift */; };
+		9F2F29F92865A5CC006CEBAF /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F29F82865A5CC006CEBAF /* ImageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		9F2F299928522119006CEBAF /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		9F2F299B2852217C006CEBAF /* RandomPhotoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPhotoListViewController.swift; sourceTree = "<group>"; };
 		9F2F299D28522339006CEBAF /* FavoritePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePhotoViewController.swift; sourceTree = "<group>"; };
+		9F2F29ED286596A4006CEBAF /* PhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModel.swift; sourceTree = "<group>"; };
+		9F2F29F02865A5A4006CEBAF /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		9F2F29F22865A5AC006CEBAF /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		9F2F29F42865A5B4006CEBAF /* DataFetcherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFetcherService.swift; sourceTree = "<group>"; };
+		9F2F29F82865A5CC006CEBAF /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +71,7 @@
 				9F2F29EC286505A0006CEBAF /* Services */,
 				9F2F298528520A82006CEBAF /* AppDelegate.swift */,
 				9F2F298728520A82006CEBAF /* SceneDelegate.swift */,
-				9F2F299928522119006CEBAF /* TabBarViewController.swift */,
-				9F2F299B2852217C006CEBAF /* RandomPhotoListViewController.swift */,
-				9F2F299D28522339006CEBAF /* FavoritePhotoViewController.swift */,
+				9F2F29FA2865A990006CEBAF /* View Controllers */,
 				9F2F298E28520A84006CEBAF /* Assets.xcassets */,
 				9F2F299028520A84006CEBAF /* LaunchScreen.storyboard */,
 				9F2F299328520A84006CEBAF /* Info.plist */,
@@ -74,8 +82,31 @@
 		9F2F29EC286505A0006CEBAF /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				9F2F29F02865A5A4006CEBAF /* NetworkService.swift */,
+				9F2F29F22865A5AC006CEBAF /* NetworkDataFetcher.swift */,
+				9F2F29F42865A5B4006CEBAF /* DataFetcherService.swift */,
+				9F2F29F82865A5CC006CEBAF /* ImageManager.swift */,
+				9F2F29EF2865A591006CEBAF /* Models */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		9F2F29EF2865A591006CEBAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F2F29ED286596A4006CEBAF /* PhotosModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9F2F29FA2865A990006CEBAF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F2F299928522119006CEBAF /* TabBarViewController.swift */,
+				9F2F299B2852217C006CEBAF /* RandomPhotoListViewController.swift */,
+				9F2F299D28522339006CEBAF /* FavoritePhotoViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,11 +179,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F2F29F32865A5AC006CEBAF /* NetworkDataFetcher.swift in Sources */,
 				9F2F299C2852217C006CEBAF /* RandomPhotoListViewController.swift in Sources */,
 				9F2F299E28522339006CEBAF /* FavoritePhotoViewController.swift in Sources */,
+				9F2F29EE286596A5006CEBAF /* PhotosModel.swift in Sources */,
 				9F2F298628520A82006CEBAF /* AppDelegate.swift in Sources */,
+				9F2F29F52865A5B4006CEBAF /* DataFetcherService.swift in Sources */,
 				9F2F299A28522119006CEBAF /* TabBarViewController.swift in Sources */,
 				9F2F298828520A82006CEBAF /* SceneDelegate.swift in Sources */,
+				9F2F29F92865A5CC006CEBAF /* ImageManager.swift in Sources */,
+				9F2F29F12865A5A4006CEBAF /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
