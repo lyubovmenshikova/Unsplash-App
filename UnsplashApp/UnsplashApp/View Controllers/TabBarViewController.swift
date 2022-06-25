@@ -19,7 +19,12 @@ class TabBarViewController: UITabBarController {
         if #available(iOS 15.0, *) {
             let appearance = UITabBarAppearance()
             appearance.configureWithOpaqueBackground()
-            appearance.backgroundColor = .systemBackground
+            appearance.backgroundColor = .black
+            
+            //color for tabBar Icon
+            appearance.stackedLayoutAppearance.normal.iconColor = .white
+            appearance.stackedLayoutAppearance.selected.iconColor = .white
+            
             tabBar.standardAppearance = appearance
             tabBar.scrollEdgeAppearance = tabBar.standardAppearance
         }
@@ -27,13 +32,11 @@ class TabBarViewController: UITabBarController {
     }
    
     private func setViewControllers() {
-        let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 50, height: 50)
-
-        let randomPhotoVC =  RandomPhotoListViewController(collectionViewLayout: layout)
-        let favoritePhotoVC = FavoritePhotoViewController()
+        let randomPhotoVC =  RandomPhotosViewController()
+        let favoritePhotoVC = FavoriteViewController()
 
         randomPhotoVC.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "photo"), selectedImage: UIImage(systemName: "photo.fill"))
+        
         favoritePhotoVC.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "heart"), selectedImage: UIImage(systemName: "heart.fill"))
         viewControllers = [randomPhotoVC, favoritePhotoVC]
     }

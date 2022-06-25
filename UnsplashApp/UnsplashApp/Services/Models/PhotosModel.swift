@@ -13,5 +13,5 @@ struct PhotosModel: Decodable {
 }
 
 struct Urls: Decodable {
-    let raw: String?
+    let small: String?
 }
